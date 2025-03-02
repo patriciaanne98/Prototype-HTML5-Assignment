@@ -1,5 +1,88 @@
-/* CSS Demo Stylesheet */
+/* CSS Demo Stylesheet
+/* Color Theme Swatches in Hex 
+.UI/UX-1-hex { color: #8404D9; }
+.UI/UX-2-hex { color: #F2E8DF; }
+.UI/UX-3-hex { color: #F2887E; }
+.UI/UX-4-hex { color: #F20707; }
+.UI/UX-5-hex { color: #F22727; }
 
-body {
-    background-color:darkseagreen;
+.UI/UX-1-rgba { color: rgba(131, 4, 216, 1); }
+.UI/UX-2-rgba { color: rgba(242, 231, 222, 1); }
+.UI/UX-3-rgba { color: rgba(242, 135, 125, 1); }
+.UI/UX-4-rgba { color: rgba(242, 7, 7, 1); }
+.UI/UX-5-rgba { color: rgba(242, 38, 38, 1); }
+
+.UI/UX-1-hsla { color: hsla(275, 96, 43, 1); }
+.UI/UX-2-hsla { color: hsla(28, 43, 91, 1); }
+.UI/UX-3-hsla { color: hsla(5, 82, 72, 1); }
+.UI/UX-4-hsla { color: hsla(0, 94, 48, 1); }
+.UI/UX-5-hsla { color: hsla(0, 88, 55, 1); }
+ */
+/* -----------Box Sizing------------- */
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing:inherit;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    margin: 0;
+    }      
+
+      /* For main, you can set the width and max-width. Example, width: 80 vw;
+    max-width: 960px;
+    background: blue; */
+main {}
+
+    header.primary{
+        background-color:#F2887E;
+        color:#ffffff; 
+        text-align: center;
+        text-shadow: 1px 1px #000;
+        /* long form */
+        padding-top: 40px;
+        padding-right: 40px;
+        padding-bottom:40px;
+        padding-left: 40px;
+        /* Single value short hand */
+        padding: 40px;
+        /* T,R,B,L */
+        padding: 20px 40px 20px 40px;
+        /* Two Value Top/Bottom / L/R */
+        padding: 20px 40px;
+        /* All these apply the same for margin */
+        }
+header.primary h1{
+font-size: 2.4rem
+/* top | left and right | bottom */
+margin: 20px 0 0;
+}
+
+header.primary h1 a{
+    color:white;
+    text-decoration:none;
+}
+header.primary h2{
+    font-size: 1.3rem;
+margin:0;
+letter-spacing: .2px;
+}
+nav.primary {}
+nav.primary ul {
+    background-color:#F2887E; /* Optional */
+    padding: 0;
+}
+nav.primary ul li {
+    background-color:#F2887E;
+    list-style-type:none;
+}
+nav.primary ul li a{
+    color:white;
 }
