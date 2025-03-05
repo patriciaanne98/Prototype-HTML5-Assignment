@@ -44,7 +44,9 @@ body{
     font-style: normal;
     margin: 0;
     }      
-
+img{
+    max-width:100%;
+}
       /* For main, you can set the width and max-width. Example, width: 80 vw;
     max-width: 960px;
     background: blue; */
@@ -125,6 +127,78 @@ nav.primary ul li a:hover{
     border-left:7.5px solid #F2887E;
     padding: 5px 0 5px 10px;
 }
+
+#blog{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    gap:10px;
+    border-top:1px solid #cccccc;
+  padding-top:40px;
+}
+
+#blog article.post {
+    box-shadow:0 4px 8px rgba(0, 0, 0, 0.6);
+    padding:10px;
+    font-size:.8rem;
+    border-radius: 4px;
+    transition:.4s;
+}
+
+#blog article.post:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  }
+
+figure{
+    margin:0;
+  
+}
+
+    figcaption , time{
+        text-transform:uppercase;
+        font-size:.6rem;
+        color:#c0c0c0;
+        text-shadow:
+      }
+
+      #blog article.post a{
+        color: #3b638b;
+      }
+
+      aside[role="complementary"]{
+        background:red;
+      }
+
+      aside .container{
+        display:flex;
+        flex-direction: row;
+        gap:40px;
+      }
+
+      aside .container a{
+        color:#ffffff;
+        display:block;
+        text-align:right;
+      }
+
+      aside .container a:last-child{
+        display:block;
+        text-align:right;
+    }
+      
+      aside article footer{
+        display:none;
+      }
+      
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:400px) {
 
