@@ -190,6 +190,85 @@ figure{
         color: #3b638b;
       }
 
+      #practice h2 {
+        color:#F2887E;
+        border-bottom: 1px dotted #cccccc;
+    
+    }
+    
+    #practice a {
+        color: #F2887E;
+        transition:.5s;
+    }
+    
+    #practice a:hover {
+        text-decoration: none;
+    }
+    
+    table {
+        width:100%;
+        border:1px solid #F2887E;
+        border-collapse: collapse;
+    }
+    caption {
+        font-weight:bold;
+        margin:10px;
+        font-size:1.3rem;
+    }
+    tr:nth-child(even) { 
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+    
+    td:nth-child(n+2) {
+    text-align:right;
+    }
+    
+    th{
+        background-color: #F2887E;
+        color: #ffffff;
+        padding:7.5px;
+    }
+    td {
+        border:1px solid #F2887E;
+        padding:5px;
+    }
+
+    #practice ol {
+        list-style-type: lower-roman;
+    }
+
+    #practice ul li ul li {
+        list-style-type: square;
+    }
+
+    #practice dl dt {
+        font-weight: bold;
+    }
+    #practice dl dd {
+        margin:0;
+    }
+
+    dd + dt {
+        margin-top:20px;
+    }
+
+    #practice blockquote {
+        border: 4px double #c0c0c0;
+        padding: 20px 40px;
+        margin:40px 80px;
+        border-radius:30px 0;
+        background-color: #F2887E;
+        color:#ffffff;
+        text-shadow: 1px 1px #000;
+    }
+
+    #practice blockquote cite {
+        display: block;
+        text-align:right;
+        font-size:0.5rem;
+        margin-top:1rem;
+    }
+
       aside[role="complementary"]{
         background-color:#F2887E;
         color:#ffffff;
@@ -217,48 +296,8 @@ figure{
         display:none;
       }
       
-#practice h2 {
-    color:#F2887E;
-    border-bottom: 1px dotted #cccccc;
 
-}
 
-#practice a {
-    color: #F2887E;
-    transition:.5s;
-}
-
-#practice a:hover {
-    text-decoration: none;
-}
-
-table {
-    width:100%;
-    border:1px solid #F2887E;
-    border-collapse: collapse;
-}
-caption {
-    font-weight:bold;
-    margin:10px;
-    font-size:1.3rem;
-}
-tr:nth-child(even) { 
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-td:nth-child(n+2) {
-text-align:right;
-}
-
-th{
-    background-color: #F2887E;
-    color: #ffffff;
-    padding:7.5px;
-}
-td {
-    border:1px solid #F2887E;
-    padding:5px;
-}
 
 
 
