@@ -109,6 +109,7 @@ margin:0;
 letter-spacing: .2px;
 }
 nav.primary {}
+
 nav.primary ul {
     background-color:#F2887E; /* Optional */
     padding: 0;
@@ -231,6 +232,42 @@ figure{
     text-decoration: none;
 }
 
+table {
+    width:100%;
+    border:1px solid #F2887E;
+    border-collapse: collapse;
+}
+caption {
+    font-weight:bold;
+    margin:10px;
+    font-size:1.3rem;
+}
+tr:nth-child(even) { 
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+td:nth-child(n+2) {
+text-align:right;
+}
+
+th{
+    background-color: #F2887E;
+    color: #ffffff;
+    padding:7.5px;
+}
+td {
+    border:1px solid #F2887E;
+    padding:5px;
+}
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:400px) {
 
@@ -244,24 +281,4 @@ figure{
 nav.primary ul li a {
     display:block;
 }
-
-table {
-    width:100%;
-    border:1px solid #F2887E;
-    border-collapse: collapse;
-}
-caption {
-    font-weight:bold;
-    margin:10px;
-    font-size:1.3rem;
-}
-tr{}
-th{
-    background-color: #F2887E;
-    color: #ffffff;
-    padding:7.5px;
-}
-td{
-    border:1px solid #F2887E;
-    padding:5px;
 }
