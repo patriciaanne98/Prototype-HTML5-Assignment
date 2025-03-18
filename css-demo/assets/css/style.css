@@ -37,6 +37,29 @@ html {
     margin:40px auto;
 }
 
+.img-right {
+    float:right;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 5px;
+    margin: 10px 0 10px 20px;
+    max-width: 20vw;
+}
+
+.img-left {
+    float:left;
+    border-bottom: 1px solid #c0c0c0;
+    padding: 5px;
+    margin: 10px 20px 10px 0;
+    max-width: 30vw;
+}
+
+.img-center {
+    display:block;
+    margin: 10px auto;
+    border:1px solid #F2887E;
+    padding:5px;
+}
+
 body{
     font-family: "Montserrat", sans-serif;
     font-optical-sizing: auto;
@@ -221,4 +244,24 @@ figure{
 nav.primary ul li a {
     display:block;
 }
+
+table {
+    width:100%;
+    border:1px solid #F2887E;
+    border-collapse: collapse;
+}
+caption {
+    font-weight:bold;
+    margin:10px;
+    font-size:1.3rem;
+}
+tr{}
+th{
+    background-color: #F2887E;
+    color: #ffffff;
+    padding:7.5px;
+}
+td{
+    border:1px solid #F2887E;
+    padding:5px;
 }
