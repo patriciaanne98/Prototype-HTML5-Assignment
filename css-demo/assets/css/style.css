@@ -145,9 +145,16 @@ nav.primary ul li a:hover{
 
 #content {}
 
-#content h2{
+#content h2 {
+    display:block;
     color:#F2887E;
     border-bottom:1px dotted darkgrey;
+}
+
+.post-title {
+    color:#F2887E;
+margin-bottom: 0;
+border-bottom: 1px dotted #000000;
 }
 
 #content h3{
