@@ -27,54 +27,49 @@
     #wrapper {
       background-color: #FFF;
       border: 1px solid #c0c0c0;
-      width: 700px;
+      width: 80vw;
       margin-right: auto;
       margin-left: auto;
       text-shadow: 2px 2px #000;
+      position:relative;
+      height:80vh;
+    }
+
+    #wrapper > div {
+      position:absolute;
+      width: 125px;
+      height: 125px;
     }
     #navy {
       background-color: #001f3f;
-      position:absolute;
-      top:167px;
-      left:238px;
-      width: 120px;
-      height:120px;
+      top:0;
+      left:0;
+      z-index:1;
     }
     #teal {
       background-color: #39CCCC;
-      position:absolute;
-      top:167px;
-      right: 238px;
-      width: 120px;
-      height: 120px;
+       top:0;
+      right:0;
     }
     #blue {
       background-color: #0074D9;
-      position:absolute;
-      bottom:-56px;
-      left:238px;
-      width: 120px;
-      height:120px;
+  bottom:0;
+  left:0;
     }
     #aqua {
       background-color: #7FDBFF;
-      position:absolute;
-      bottom:-56px;
-      right:238px;
-      width: 120px;
-      height:120px;
+  bottom:0;
+  right:0;
     }
-    #footer {
-      background-color: #666;
-      width: 120px;
-      height: 120px;
-      flex-direction:row;
-      flex-wrap: wrap-reverse;
-      justify-content: center;
-      align-content:center;
-      padding:5px;
-      margin: 220px 280px;
+    body #footer {
+  background-color: #666;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  width:20%;
+  height:20%;
     }
+
     h1 {
       color: #000;
       font-weight: normal;
@@ -85,14 +80,13 @@
 <body>
   <h1>Exercise</h1>
   <section id="wrapper">
-    <div id="navy">Navy</div>
-    <div id="teal">Teal</div>
-    <div id="blue">Blue</div>
-    <div id="aqua">Aqua</div>
+    <div id="navy" class="title">Navy</div>
+    <div id="teal" class="title">Teal</div>
+    <div id="blue" class="title">Blue</div>
+    <div id="aqua" class="title">Aqua</div>
     <div id="footer">Footer</div>
   </section>
 </body>
 
 </html>
-
 
