@@ -285,6 +285,10 @@ font-weight:bold;
         padding:10px;
         border-bottom: 1px solid darkgrey;
     }
+    caption {
+        color:#3b638b;
+        padding:5px 5px;
+    }
     table {
         width:100%;
         border:1px solid #010D00;
@@ -315,6 +319,16 @@ font-weight:bold;
         padding:5px;
     }
 
+    li {
+        font-style: italic;
+        font-weight: bold;
+    }
+    dd {
+        color:#3b638b;
+    }
+ #practice p {
+font-weight:bold;
+ }
     #practice ol {
         list-style-type: lower-roman;
     }
