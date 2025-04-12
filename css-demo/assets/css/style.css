@@ -95,6 +95,11 @@ main {}
   padding: 20px 40px;
 }
 
+#about header.primary {
+    background-color: #F0F2DF;
+    background-image:
+}
+
 header.primary h1{
 font-size: 2.4rem;
 /* top | left and right | bottom */
