@@ -7,7 +7,12 @@
   <meta name="robots" content="noindex" />
   <title>Mission History | NASA Mars Rovers</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-  <link href="assets/css/style.css" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </head>
 <body>
   <nav>
@@ -19,30 +24,33 @@
   </nav>
 
   <header class="hero">
-    <h1>Mission History</h1>
-    <p>Launches, Landings, and Discoveries</p>
+    <h1 class="fade-in">Mission History</h1>
+    <p class="fade-in">Launches, Landings, and Discoveries</p>
+    <button onclick="toggleDarkMode()" class="dark-toggle">Toggle Dark Mode</button>
   </header>
 
   <main>
-    <section class="intro">
-      <h2 id="perseverance">Perseverance Rover</h2>
-      <p><strong>Launch Date:</strong> July 30, 2020<br />
-         <strong>Landing Site:</strong> Jezero Crater – February 18, 2021<br />
-         <strong>Mission Goals:</strong> Search for ancient microbial life, collect rock and soil samples.<br />
-         <strong>Notable Tech:</strong> MOXIE, Ingenuity drone helicopter, Sample Caching System.
+    <section class="intro fade-in" id="perseverance">
+      <h2>Perseverance Rover</h2>
+      <p>
+        <strong>Launch Date:</strong> July 30, 2020<br />
+        <strong>Landing Site:</strong> Jezero Crater – February 18, 2021<br />
+        <strong>Mission Goals:</strong> Search for ancient microbial life, collect rock and soil samples.<br />
+        <strong>Key Technology:</strong> Ingenuity helicopter, MOXIE oxygen generator, sample caching system.
       </p>
     </section>
 
-    <section class="intro">
-      <h2 id="curiosity">Curiosity Rover</h2>
-      <p><strong>Launch Date:</strong> November 26, 2011<br />
-         <strong>Landing Site:</strong> Gale Crater – August 6, 2012<br />
-         <strong>Mission Goals:</strong> Assess whether Mars ever had conditions suitable for life.<br />
-         <strong>Notable Tech:</strong> ChemCam laser, onboard lab, radiation sensors.
+    <section class="intro fade-in" id="curiosity">
+      <h2>Curiosity Rover</h2>
+      <p>
+        <strong>Launch Date:</strong> November 26, 2011<br />
+        <strong>Landing Site:</strong> Gale Crater – August 6, 2012<br />
+        <strong>Mission Goals:</strong> Study Mars' climate and geology, assess habitability for microbial life.<br />
+        <strong>Key Technology:</strong> Laser ChemCam, radiation detectors, onboard science lab.
       </p>
     </section>
-    
-    <section class="intro">
+
+    <section class="intro fade-in">
       <h2>Rover Comparison Table</h2>
       <table>
         <tr>
@@ -65,7 +73,6 @@
         </tr>
       </table>
     </section>
-    
   </main>
 
   <footer>
