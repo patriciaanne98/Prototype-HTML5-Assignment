@@ -72,16 +72,32 @@ nav a.active {
 }
 
 header.hero {
-  background: url('images/mars-banner.jpg') no-repeat center center/cover;
-  height: 350px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 1rem;
-}
+    background: url('https://d.newsweek.com/en/full/1989062/mars.jpg?w=1200&f=9d7b29ce714dda4e94785ebb9de0ca6c') no-repeat center center/cover;
+    background-attachment: fixed;
+    height: 350px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    z-index: 1;
+  }
+  
+  header.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4); /* overlay to improve contrast */
+    z-index: -1;
+  }
+
+  header.hero h1 {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
 
 .dark-toggle {
   margin-top: 1rem;
@@ -152,6 +168,32 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+.footer-email {
+  display: inline-block;
+  margin-top: 1rem;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+
+}
+
+.footer-email:hover {
+  background-color: #c72d18;
+}
+
+.dark-mode .footer-email {
+  background-color: #ff6b6b;
+  color: #1a1a1a;
+}
+
+.dark-mode .footer-email:hover {
+  background-color: #ff4444;
+}
+
 
 /* Fade-in and Slide-in animations */
 .fade-in {
