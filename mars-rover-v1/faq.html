@@ -2,34 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="FAQ - NASA Mars Rovers">
-  <meta name="robots" content="noindex">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NASA Mars Rovers - FAQ" />
+  <meta name="robots" content="noindex" />
   <title>FAQ | NASA Mars Rovers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
   <link href="assets/css/style.css" rel="stylesheet"/>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="mission.html">Mission History</a></li>
-        <li><a href="faq.html" class="active">FAQ</a></li>
-      </ul>
-    </nav>
-    <h1>Frequently Asked Questions</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mission.html">Mission History</a></li>
+      <li><a href="faq.html" class="active">FAQ</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1 class="fade-in">Frequently Asked Questions</h1>
+    <p class="fade-in">Explore the answers to common questions about Mars and NASA's robotic missions</p>
+    <button onclick="toggleDarkMode()" class="dark-toggle">Toggle Dark Mode</button>
   </header>
 
   <main>
-    <section>
-      <h2>What is a Mars rover?</h2>
-      <p>A Mars rover is a motor vehicle designed to explore the surface of Mars. They are equipped with cameras, scientific tools, and sometimes even drones.</p>
+    <section class="intro fade-in">
+      <h2>General Questions</h2>
 
-      <h2>Why are we exploring Mars?</h2>
-      <p>Mars may have once supported life. Understanding its geology and climate helps us learn more about the potential for life beyond Earth.</p>
+      <div class="faq-list">
+        <details class="faq fade-in">
+          <summary>What is a Mars rover?</summary>
+          <p>A Mars rover is a robotic vehicle designed to explore the surface of Mars, equipped with cameras, sensors, and tools to study the planet's geology, climate, and search for signs of life.</p>
+        </details>
 
-      <h2>Where can I learn more?</h2>
-      <p>Visit <a href="https://mars.nasa.gov" target="_blank">NASA's Mars Exploration Program</a> for the latest updates.</p>
+        <details class="faq fade-in">
+          <summary>Why is Mars so interesting to scientists?</summary>
+          <p>Mars is the most Earth-like planet in our solar system. It may have once supported life, and studying it helps scientists understand planetary evolution and prepare for future human missions.</p>
+        </details>
+
+        <details class="faq fade-in">
+          <summary>How many Mars rovers has NASA launched?</summary>
+          <p>NASA has successfully sent five rovers to Mars: Sojourner, Spirit, Opportunity, Curiosity, and Perseverance.</p>
+        </details>
+
+        <details class="faq fade-in">
+          <summary>Where can I follow NASA's Mars missions?</summary>
+          <p>Visit the <a href="https://mars.nasa.gov" target="_blank">official NASA Mars Exploration website</a> for mission updates, photos, and educational resources.</p>
+        </details>
+      </div>
     </section>
   </main>
 
