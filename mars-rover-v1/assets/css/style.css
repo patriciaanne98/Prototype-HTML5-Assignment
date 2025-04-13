@@ -207,6 +207,10 @@ body.dark-mode table th {
   padding: 0 1rem;
 }
 
+.faq-list details {
+  margin-bottom: 1.5rem;
+}
+
 details.faq {
   background: white;
   border-radius: 8px;
@@ -218,12 +222,30 @@ details.faq {
 }
 
 details.faq summary {
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background: var(--nasa-blue);
+  color: white;
+  border-radius: 6px;
+}
+
+details.faq[open] summary {
+  background: var(--nasa-red);
+}
+
+details.faq summary {
   font-weight: bold;
   font-size: 1.1rem;
 }
 
 details.faq[open] {
   background: #f0f8ff;
+}
+
+details.faq[open] p {
+  animation: fadeIn 0.5s ease-in;
 }
 
 body.dark-mode details.faq {
