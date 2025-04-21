@@ -22,9 +22,10 @@
         <img src="assets/img/rover-design-removebg-preview.jpg" alt="RoverX Logo" />
       </a>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-      <li><a href="mission.html">Mission History</a></li>
+      <li><a href="mission.html">Mission</a></li>
       <li><a href="faq.html">FAQ</a></li>
     </ul>
   </nav>
@@ -68,5 +69,12 @@
     <p>Contact: <a href="mailto:yourname@email.com" class="footer-email">itservices-help@ualr.edu</a></p>
   </div>
   </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+  
 </body>
 </html>

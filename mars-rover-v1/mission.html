@@ -21,6 +21,7 @@
         <img src="assets/img/rover-design-removebg-preview.jpg" alt="RoverX Logo"/>
       </a>
     </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
       <li><a href="mission.html">Mission History</a></li>
@@ -30,7 +31,7 @@
 
 
   <header class="hero">
-    <h1 class="fade-in">Mission History</h1>
+    <h1 class="fade-in">Mission</h1>
     <p class="fade-in">Launches, Landings, and Discoveries</p>
     <button onclick="toggleDarkMode()" class="dark-toggle">Toggle Dark Mode</button>
   </header>
@@ -89,5 +90,11 @@
     <p>Contact: <a href="mailto:yourname@email.com" class="footer-email">itservices-help@ualr.edu</a></p>
   </div>
   </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>  
 </body>
 </html>

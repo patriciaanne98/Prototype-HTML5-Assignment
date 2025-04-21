@@ -314,6 +314,13 @@ details.faq p {
   margin-top: 0.5rem;
 }
 
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem;
+}
 
 @media (max-width: 768px) {
   .rover-cards {
@@ -324,4 +331,37 @@ details.faq p {
   table {
     font-size: 0.9rem;
   }
+.nav-links {
+  display: none;
+  flex-direction: column;
+  background-color: var(--nasa-blue);
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+}
+
+.nav-links.show {
+  display: flex;
+}
+
+.nav-links li {
+  margin: 1rem 0;
+}
+
+.hamburger {
+  display: block;
+}
+
+nav {
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+}
+
+.nav-logo img {
+  height: 45px;
+}
 }
