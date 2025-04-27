@@ -1,38 +1,43 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Patricia Frogoso | UX/UI & Web Design</title>
 
-  <title>IFSC 1310 | Patricia Frogoso</title>
-  <meta name="description" content="Keyword Rich Description">
-  <meta name="author" content="Patricia Frogoso">
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <h1>Patricia Frogoso</h1>
-  <nav>
-  <ul>
-    <li><a href="prototype/index.html">First Assignment</a></li>
-    <li><a href="css-demo/index.html">CSS Demo</a></li>
-    <li><a href="prototype/assets/img/CSS-Diner.png">CSS Diner</a></li>
-    <li><a href="prototype/assets/img/froggy.jpg">Froggy</a></li>
-    
-    <li>Positioning Label 
-      <ul>
-        <li><a href = "positioning-lab/float-1.html">Float 1</a></li>
-        <li><a href = "positioning-lab/float-2.html">Float 2</a></li>
-        <li><a href = "positioning-lab/absolute-1.html">Absolute 1</a></li>
-        <li><a href = "positioning-lab/absolute-2.html">Absolute 2</a></li>
-      </ul>
-    </li>
-    <li><a href="prototype/assets/img/Moon-Bear.jpg">In-Class Image Assignment</a></li>
-    <li><a href="prototype/assets/img/sam-rockwell-meme.jpg">Meme Assignment</a></li>
-    <li><a href="prototype/assets/img/Gravit-Logo-Assignment.jpg">Icon Assignment</a></li>
-    <li><a href="mars-rover-v1/">Mars Rover v1</a></li>
-    <li>Next Assignment</li>
-  </ul>
-  </nav>
+  <header class="hero">
+    <div class="container">
+      <h1>Patricia Frogoso</h1>
+      <p>UX/UI Designer & Creative Technologist</p>
+    </div>
+    <div class="background-shapes">
+      <div class="shape shape1"></div>
+      <div class="shape shape2"></div>
+      <div class="shape shape3"></div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="projects">
+      <h2>Featured Projects</h2>
+      <div class="project-grid">
+        <a href="prototype/index.html" class="project-card">First Assignment</a>
+        <a href="css-demo/index.html" class="project-card">CSS Demo</a>
+        <a href="prototype/assets/img/CSS-Diner.png" class="project-card" target="_blank">CSS Diner Screenshot</a>
+        <a href="prototype/assets/img/froggy.jpg" class="project-card" target="_blank">Froggy Screenshot</a>
+        <a href="mars-rover-v1/index.html" class="project-card">🚀 Mars Rover v1</a>
+        <div class="project-card coming-soon">Next Project Coming Soon...</div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2025 Patricia Frogoso | Designed & Developed with ❤️</p>
+  </footer>
 </body>
 </html>
