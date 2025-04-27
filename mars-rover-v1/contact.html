@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact NASA Mars Rover Program Site" />
+  <meta name="robots" content="noindex" />
+  <title>Contact | NASA Mars Rovers</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet"/>
+
+  <script>
+    // Toggle dark mode
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+    // Hamburger menu
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
+</head>
+
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/img/rover-design-removebg-preview.jpg" alt="RoverX Logo" />
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mission.html">Mission</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <h1 class="fade-in">Contact Us</h1>
+    <p class="fade-in">Reach out to learn more about Mars exploration!</p>
+    <button onclick="toggleDarkMode()" class="dark-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <!-- Contact Form Section -->
+  <main>
+    <section class="contact-section">
+      <div class="container">
+
+        <div class="contact-form-container">
+          <!-- Wufoo Form -->
+          <div id="wufoo-zr04mpq1sx1z2a">
+            Fill out my <a href="https://patriciaanne98.wufoo.com/forms/zr04mpq1sx1z2a">online form</a>.
+          </div> 
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
+      <p>Contact: <a href="mailto:yourname@email.com" class="footer-email">itservices-help@ualr.edu</a></p>
+    </div>
+  </footer>
+
+  <!-- Wufoo Script -->
+  <script type="text/javascript"> 
+    var zr04mpq1sx1z2a;
+    (function(d, t) {
+      var s = d.createElement(t),
+      options = {
+        'userName':'patriciaanne98',
+        'formHash':'zr04mpq1sx1z2a',
+        'autoResize':true,
+        'height':'577',
+        'async':true,
+        'host':'wufoo.com',
+        'header':'show',
+        'ssl':true
+      };
+      s.src = ('https:' == d.location.protocol ?'https://':'http://') + 'secure.wufoo.com/scripts/embed/form.js';
+      s.onload = s.onreadystatechange = function() {
+        var rs = this.readyState;
+        if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+        try {
+          zr04mpq1sx1z2a = new WufooForm();
+          zr04mpq1sx1z2a.initialize(options);
+          zr04mpq1sx1z2a.display();
+        } catch (e) { }
+      };
+      var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+    })(document, 'script');
+  </script>
+</body>
+</html>
