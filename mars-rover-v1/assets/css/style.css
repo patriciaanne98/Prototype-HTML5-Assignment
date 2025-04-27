@@ -1,452 +1,452 @@
 /* === Root Variables === */
 :root {
-  --nasa-blue: #0b3d91;
-  --nasa-red: #fc3d21;
-  --dark-bg: #1a1a1a;
-  --light-bg: #f4f4f4;
-  --text-light: #ffffff;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-body {
-  font-family: 'Roboto', sans-serif;
-  background-color: var(--light-bg);
-  color: #333;
-  line-height: 1.6;
-}
-
-body.dark-mode {
-  background-color: #121212;
-  color: var(--text-light);
-}
-
-body.dark-mode nav {
-  background-color: #0a2a63;
-}
-
-body.dark-mode .card {
-  background-color: #222;
-  color: var(--text-light);
-}
-
-body.dark-mode footer {
-  background-color: #000;
-}
-nav {
-  background-color: var(--nasa-blue);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
-  flex-wrap: wrap;
-}
-
-.nav-logo {
-  display: flex;
-  align-items: center;
-}
-
-.nav-logo img {
-  height: 55px;
-  width: auto;
-  flex: 1;
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  flex-grow: 1;
-  gap: 1.5rem;
-  list-style: none;
-  margin: 0 auto;
-  padding: 0;
-  padding-right: 70px;
-}
-
-.nav-links li a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1.6rem;
-  border-radius: 5px;
-}
-
-.nav-links li a:hover,
-.nav-links li a.active {
-  background-color: var(--nasa-red);
-}
-
-header.hero {
-    background: url('https://d.newsweek.com/en/full/1989062/mars.jpg?w=1200&f=9d7b29ce714dda4e94785ebb9de0ca6c') no-repeat center center/cover;
-    background-attachment: fixed;
-    height: 350px;
-    color: white;
+    --nasa-blue: #0b3d91;
+    --nasa-red: #fc3d21;
+    --dark-bg: #1a1a1a;
+    --light-bg: #f4f4f4;
+    --text-light: #ffffff;
+  }
+  
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--light-bg);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  body.dark-mode {
+    background-color: #121212;
+    color: var(--text-light);
+  }
+  
+  body.dark-mode nav {
+    background-color: #0a2a63;
+  }
+  
+  body.dark-mode .card {
+    background-color: #222;
+    color: var(--text-light);
+  }
+  
+  body.dark-mode footer {
+    background-color: #000;
+  }
+  nav {
+    background-color: var(--nasa-blue);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .nav-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    height: 55px;
+    width: auto;
+    flex: 1;
+  }
+  
+  .nav-links {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    gap: 1.5rem;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    padding-right: 70px;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1.6rem;
+    border-radius: 5px;
+  }
+  
+  .nav-links li a:hover,
+  .nav-links li a.active {
+    background-color: var(--nasa-red);
+  }
+  
+  header.hero {
+      background: url('https://d.newsweek.com/en/full/1989062/mars.jpg?w=1200&f=9d7b29ce714dda4e94785ebb9de0ca6c') no-repeat center center/cover;
+      background-attachment: fixed;
+      height: 350px;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      position: relative;
+      z-index: 1;
+    }
+    
+    header.hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.4); /* overlay to improve contrast */
+      z-index: -1;
+    }
+  
+    header.hero h1 {
+      text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    }
+    
+  
+  .dark-toggle {
+    margin-top: 1rem;
+    background-color: var(--nasa-red);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .intro {
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .rovers {
+    background-color: white;
+    padding: 2rem;
+  }
+  
+  .rover-cards {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.4s ease;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 4px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: var(--nasa-red);
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-top: 1rem;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #c72d18;
+  }
+  
+  footer {
+    background-color: var(--dark-bg);
+    color: var(--text-light);
     text-align: center;
     padding: 1rem;
-    position: relative;
-    z-index: 1;
-  }
-  
-  header.hero::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.4); /* overlay to improve contrast */
-    z-index: -1;
-  }
-
-  header.hero h1 {
-    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
-  }
-  
-
-.dark-toggle {
-  margin-top: 1rem;
-  background-color: var(--nasa-red);
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.intro {
-  text-align: center;
-  padding: 2rem;
-}
-
-.rovers {
-  background-color: white;
-  padding: 2rem;
-}
-
-.rover-cards {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  padding: 1rem;
-  width: 300px;
-  text-align: center;
-  transition: transform 0.4s ease;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 4px;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.btn {
-  display: inline-block;
-  background-color: var(--nasa-red);
-  color: white;
-  padding: 0.5rem 1rem;
-  margin-top: 1rem;
-  border-radius: 4px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-  background-color: #c72d18;
-}
-
-footer {
-  background-color: var(--dark-bg);
-  color: var(--text-light);
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
-
-.footer-email {
-  display: inline-block;
-  margin-top: 1rem;
-  color: white;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-
-}
-
-.footer-email:hover {
-  background-color: #c72d18;
-}
-
-.dark-mode .footer-email {
-  background-color: #ff6b6b;
-  color: #1a1a1a;
-}
-
-.dark-mode .footer-email:hover {
-  background-color: #ff4444;
-}
-
-
-/* Fade-in and Slide-in animations */
-.fade-in {
-  animation: fadeIn 1s ease-in both;
-}
-
-.slide-in {
-  animation: slideIn 1s ease-out both;
-}
-
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
-
-@keyframes slideIn {
-  from { transform: translateY(30px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-/* Table styles for mission.html */
-table {
-  width: 90%;
-  margin: 2rem auto;
-  border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-table th, table td {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  text-align: left;
-}
-
-table th {
-  background-color: var(--nasa-blue);
-  color: white;
-}
-
-body.dark-mode table {
-  background-color: #222;
-  color: var(--text-light);
-}
-
-body.dark-mode table th {
-  background-color: #0a2a63;
-}
-
-.faq-list {
-  max-width: 800px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-.faq-list details {
-  margin-bottom: 1.5rem;
-}
-
-details.faq {
-  background: white;
-  border-radius: 8px;
-  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 1rem;
-  padding: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-details.faq summary {
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  background: var(--nasa-blue);
-  color: white;
-  border-radius: 6px;
-}
-
-details.faq[open] summary {
-  background: var(--nasa-red);
-}
-
-details.faq summary {
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-details.faq[open] {
-  background: #f0f8ff;
-}
-
-details.faq[open] p {
-  animation: fadeIn 0.5s ease-in;
-}
-
-body.dark-mode details.faq {
-  background: #1e1e1e;
-  color: var(--text-light);
-}
-
-body.dark-mode details.faq[open] {
-  background: #2a2a2a;
-}
-
-details.faq p {
-  margin-top: 0.5rem;
-}
-
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
-  padding: 0.5rem;
-}
-
-
-/* === Contact Form Section === */
-.contact-section {
-  background-color: #f4f4f4; /* Light gray background */
-  padding: 4rem 2rem;
-}
-
-.contact-section h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #0b3d91; /* NASA blue */
-}
-
-.contact-form-container {
-  max-width: 800px;
-  margin: 0 auto;
-  background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
-}
-
-#wuf-container, 
-#wufoo-zr04mpq1sx1z2a {
-  width: 100% !important;
-}
-/* === DARK MODE OVERRIDES === */
-body.dark-mode {
-  background-color: #121212;
-  color: #f4f4f4;
-}
-
-body.dark-mode nav {
-  background-color: #0a2a63;
-}
-
-body.dark-mode .hero {
-  background: #1c1c1c;
-}
-
-body.dark-mode .contact-section {
-  background: #1c1c1c;
-}
-
-body.dark-mode .contact-form-container {
-  background: #222;
-  color: #f4f4f4;
-}
-
-body.dark-mode footer {
-  background-color: #000;
-  color: #bbb;
-}
-
-body.dark-mode a {
-  color: #90caf9; /* Light blue links */
-}
-
-body.dark-mode a:hover {
-  color: #ff8a65; /* Soft orange hover */
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .rover-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  table {
     font-size: 0.9rem;
   }
-.nav-links {
-  display: none;
-  flex-direction: column;
-  background-color: var(--nasa-blue);
-  position: absolute;
-  top: 60px;
-  left: 0;
-  width: 100%;
-  text-align: center;
-  z-index: 999;
-}
-
-.nav-links.show {
-  display: flex;
-}
-
-.nav-links li {
-  margin: 1rem 0;
-}
-
-.hamburger {
-  display: block;
-}
-
-nav {
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-}
-
-.nav-logo img {
-  height: 45px;
-}
-}
+  
+  .footer-email {
+    display: inline-block;
+    margin-top: 1rem;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  
+  }
+  
+  .footer-email:hover {
+    background-color: #c72d18;
+  }
+  
+  .dark-mode .footer-email {
+    background-color: #ff6b6b;
+    color: #1a1a1a;
+  }
+  
+  .dark-mode .footer-email:hover {
+    background-color: #ff4444;
+  }
+  
+  
+  /* Fade-in and Slide-in animations */
+  .fade-in {
+    animation: fadeIn 1s ease-in both;
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-out both;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideIn {
+    from { transform: translateY(30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  /* Table styles for mission.html */
+  table {
+    width: 90%;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  table th, table td {
+    padding: 1rem;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  table th {
+    background-color: var(--nasa-blue);
+    color: white;
+  }
+  
+  body.dark-mode table {
+    background-color: #222;
+    color: var(--text-light);
+  }
+  
+  body.dark-mode table th {
+    background-color: #0a2a63;
+  }
+  
+  .faq-list {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  
+  .faq-list details {
+    margin-bottom: 1.5rem;
+  }
+  
+  details.faq {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  details.faq summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    background: var(--nasa-blue);
+    color: white;
+    border-radius: 6px;
+  }
+  
+  details.faq[open] summary {
+    background: var(--nasa-red);
+  }
+  
+  details.faq summary {
+    font-weight: bold;
+    font-size: 1.1rem;
+  }
+  
+  details.faq[open] {
+    background: #f0f8ff;
+  }
+  
+  details.faq[open] p {
+    animation: fadeIn 0.5s ease-in;
+  }
+  
+  body.dark-mode details.faq {
+    background: #1e1e1e;
+    color: var(--text-light);
+  }
+  
+  body.dark-mode details.faq[open] {
+    background: #2a2a2a;
+  }
+  
+  details.faq p {
+    margin-top: 0.5rem;
+  }
+  
+  .hamburger {
+    display: none;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  
+  /* === Contact Form Section === */
+  .contact-section {
+    background-color: #f4f4f4; /* Light gray background */
+    padding: 4rem 2rem;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #0b3d91; /* NASA blue */
+  }
+  
+  .contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  #wuf-container, 
+  #wufoo-zr04mpq1sx1z2a {
+    width: 100% !important;
+  }
+  /* === DARK MODE OVERRIDES === */
+  body.dark-mode {
+    background-color: #121212;
+    color: #f4f4f4;
+  }
+  
+  body.dark-mode nav {
+    background-color: #0a2a63;
+  }
+  
+  body.dark-mode .hero {
+    background: #1c1c1c;
+  }
+  
+  body.dark-mode .contact-section {
+    background: #1c1c1c;
+  }
+  
+  body.dark-mode .contact-form-container {
+    background: #222;
+    color: #f4f4f4;
+  }
+  
+  body.dark-mode footer {
+    background-color: #000;
+    color: #bbb;
+  }
+  
+  body.dark-mode a {
+    color: #90caf9; /* Light blue links */
+  }
+  
+  body.dark-mode a:hover {
+    color: #ff8a65; /* Soft orange hover */
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    .rover-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    table {
+      font-size: 0.9rem;
+    }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--nasa-blue);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin: 1rem 0;
+  }
+  
+  .hamburger {
+    display: block;
+  }
+  
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  
+  .nav-logo img {
+    height: 45px;
+  }
+  }
