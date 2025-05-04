@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="NASA Mars Rover Missions" />
+  <meta name="robots" content="noindex" />
+  <title>Mission History | NASA Mars Rovers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link href="assets/css/style.css" rel="stylesheet"/>
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+  </script>
+</head>
+<body>
+  <nav>
+    <div class="nav-logo">
+      <a href="index.html">
+        <img src="assets/img/rover-design-removebg-preview.jpg" alt="RoverX Logo"/>
+      </a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="mission.html" class="active">Mission</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+  <header class="hero">
+    <h1 class="fade-in">Mission</h1>
+    <p class="fade-in">Launches, Landings, and Discoveries</p>
+    <button onclick="toggleDarkMode()" class="dark-toggle">Toggle Dark Mode</button>
+  </header>
+
+  <main>
+    <div class="container">
+    <section class="intro fade-in" id="perseverance">
+      <h2>Perseverance Rover</h2>
+      <p>
+        <strong>Launch Date:</strong> July 30, 2020<br />
+        <strong>Landing Site:</strong> Jezero Crater – February 18, 2021<br />
+        <strong>Mission Goals:</strong> Search for ancient microbial life, collect rock and soil samples.<br />
+        <strong>Key Technology:</strong> Ingenuity helicopter, MOXIE oxygen generator, sample caching system.
+      </p>
+    </section>
+
+    <section class="intro fade-in" id="curiosity">
+      <h2>Curiosity Rover</h2>
+      <p>
+        <strong>Launch Date:</strong> November 26, 2011<br />
+        <strong>Landing Site:</strong> Gale Crater – August 6, 2012<br />
+        <strong>Mission Goals:</strong> Study Mars' climate and geology, assess habitability for microbial life.<br />
+        <strong>Key Technology:</strong> Laser ChemCam, radiation detectors, onboard science lab.
+      </p>
+    </section>
+
+    <section class="intro fade-in">
+      <h2>Rover Comparison Table</h2>
+      <table>
+        <tr>
+          <th>Rover</th>
+          <th>Launch Date</th>
+          <th>Landing Site</th>
+          <th>Main Objective</th>
+        </tr>
+        <tr>
+          <td>Perseverance</td>
+          <td>July 30, 2020</td>
+          <td>Jezero Crater</td>
+          <td>Search for ancient life, collect samples</td>
+        </tr>
+        <tr>
+          <td>Curiosity</td>
+          <td>November 26, 2011</td>
+          <td>Gale Crater</td>
+          <td>Study climate, geology, and habitability</td>
+        </tr>
+      </table>
+    </section>
+  </div>
+  </main>
+
+  <footer>
+    <div class="container">
+    <p>This website was created as a student project for educational purposes. NASA is not affiliated with or endorsing this work.</p>
+    <p>Contact: <a href="mailto:yourname@email.com" class="footer-email">itservices-help@ualr.edu</a></p>
+  </div>
+  </footer>
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>  
+</body>
+</html>
