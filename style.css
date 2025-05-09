@@ -20,6 +20,7 @@ body {
 }
 
 /* === Hero Section === */
+
 .hero {
   position: relative;
   height: 90vh;
@@ -180,3 +181,50 @@ body {
   margin-top: 4rem;
 }
 
+/* Fade/slide-up for text */
+.hero .container h1, 
+.hero .container p {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeSlideUp 1.2s ease-out forwards;
+}
+
+.hero .container p {
+  animation-delay: 0.4s;
+}
+
+@keyframes fadeSlideUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scroll cue styling */
+.scroll-cue {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.scroll-cue .arrow {
+  display: block;
+  width: 24px;
+  height: 24px;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  transform: rotate(45deg);
+  animation: bounce 1.5s infinite;
+  margin: 0 auto;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: rotate(45deg) translateY(0);
+  }
+  50% {
+    transform: rotate(45deg) translateY(10px);
+  }
+}
